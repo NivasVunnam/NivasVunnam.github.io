@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -227,3 +228,274 @@
 
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio - Vunnam.SN</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <nav class="navbar">
+      <a href="#" class="logo">Vunnam.SN</a>
+      <div class="hamburger" id="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#" class="special">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#hire" class="hire-btn">Hire Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-image">
+      <img src="profile-pic.jpg" alt="Vunnam Sai Nivas" />
+    </div>
+    <div class="hero-text">
+      <h1>
+        Hi, I'm <br />
+        <span class="highlight">Vunnam Sai Nivas</span>
+      </h1>
+
+      <p class="role">Full-Stack Developer</p>
+      <p class="location">Based in <span>India</span></p>
+
+      <p class="desc">
+        I’m a passionate <span>Full-Stack Developer</span> who loves turning ideas
+        into impactful digital solutions.
+        With hands-on experience in
+        <span>Java, JSP/Servlets, SQL, and React</span>, I craft both sleek frontends and powerful
+        backends.
+        From building <span>real-world applications</span> to developing projects of my own,
+        I thrive on solving problems that matter.
+      </p>
+
+      <p class="desc highlight-line">
+        Let’s collaborate and create technology that makes a difference!
+      </p>
+
+      <div class="hero-btns">
+        <a href="#projects" class="hero-btn">View My Work</a>
+        <a href="#hire" class="hero-btn">Hire Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about-section" id="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <p>
+        I’m <strong>Sai Nivas Vunnam</strong>, a Computer Science graduate and passionate
+        <strong>Full Stack Developer</strong> who thrives at the intersection of creativity and
+        problem-solving. With hands-on experience in both frontend and backend development,
+        I love transforming ideas into intuitive, impactful digital experiences.
+      </p>
+      <br />
+      <p>
+        During my internship at <strong>Smartek21 </strong>, I sharpened my skills in
+        <strong>Java, JSP/Servlets, SQL, and React</strong>, contributing to backend feature
+        development, debugging production systems, and collaborating in agile teams to deliver
+        production-ready solutions.
+      </p>
+      <br />
+      <p>
+        Beyond professional work, I’ve built projects that bridge innovation with practicality—
+        from a <strong>machine learning-powered platform</strong> that detects environmental violations,
+        to an <strong>AI-driven crop recommender</strong>, and a
+        <strong>translation learning tool</strong> enabling cross-language communication.
+      </p>
+      <br />
+      <p>
+        With a strong foundation in <strong>data structures, algorithms, and problem-solving</strong>,
+        I bring both analytical depth and creative energy to every project.
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="about-section">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skills-category" id="languages">
+        <h3>Languages</h3>
+        <div class="skills-list"></div>
+      </div>
+      <div class="skills-category" id="technologies">
+        <h3>Technologies</h3>
+        <div class="skills-list"></div>
+      </div>
+      <div class="skills-category" id="toolsOtherSkills">
+        <h3>Tools & Other Skills</h3>
+        <div class="skills-list"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="about-section">
+    <h2>Certifications</h2>
+    <div class="certs-container">
+      <div class="certs-list" id="cert-list"></div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="timeline" id="timeline">
+    <h2 class="timeline__title">My Journey</h2>
+    <div class="timeline__items"></div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="about-section">
+    <h2>Projects</h2>
+    <div class="projects-container" id="projects-list"></div>
+  </section>
+
+<!-- HIRE ME -->
+<section id="hire" class="hire-section">
+  <h2>Hire Me</h2>
+  <p class="hire-intro">
+    Interested in working together? Let’s connect! <br />
+    Reach me at <a href="mailto:vunnamsainivas@gmail.com">vunnamsainivas@gmail.com</a>.
+  </p>
+
+  <!-- ✅ Form connected to Formspree -->
+  <form
+    class="hire-form"
+    id="hire-form"
+    action="https://formspree.io/f/mpwypbrl"
+    method="POST"
+  >
+    <div class="form-group">
+      <input
+        type="text"
+        placeholder="Your Name"
+        name="user_name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <input
+        type="email"
+        placeholder="Your Email"
+        name="user_email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <textarea
+        placeholder="Your Message"
+        name="message"
+        rows="5"
+        required
+      ></textarea>
+    </div>
+    <button type="submit" class="hire-btn">Send Message</button>
+  </form>
+
+  <!-- ✅ Response message (hidden by default) -->
+  <p
+    id="response-message"
+    style="display: none; margin-top: 10px; color: green; white-space: pre-line;"
+  ></p>
+
+</section>
+
+<!-- ✅ JavaScript to handle submit + hide form -->
+<script>
+  const form = document.getElementById("hire-form");
+  const responseMessage = document.getElementById("response-message");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    fetch(form.action, {
+      method: "POST",
+      body: formData,
+      headers: {
+        Accept: "application/json",
+      },
+    })
+      .then((response) => {
+        if (response.ok) {
+          // ✅ Hide the form
+          form.style.display = "none";
+
+          // ✅ Show success message
+          responseMessage.style.display = "block";
+          responseMessage.style.color = "green";
+          responseMessage.textContent = "Thanks for your response!\nI'll reach out to you soon enough.";
+
+        } else {
+          return response.json().then((data) => {
+            throw new Error(data.error || "Form submission failed.");
+          });
+        }
+      })
+      .catch((error) => {
+        responseMessage.style.display = "block";
+        responseMessage.style.color = "red";
+        responseMessage.textContent =
+          "Oops! Something went wrong. Please try again.";
+      });
+  });
+</script>
+
+
+
+
+  <!-- Scripts -->
+  <script src="menu.js"></script>
+  <script src="skills.js"></script>
+  <script src="renderSkills.js"></script>
+  <script src="certifications.js"></script>
+  <script src="renderCerts.js"></script>
+  <script src="timeline.js"></script>
+  <script src="projects.js"></script>
+  <script src="renderProjects.js"></script>
+
+  <!-- Smooth Scroll Fix -->
+  <script>
+    document.querySelectorAll('.nav-links a, .logo').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        const href = this.getAttribute('href');
+
+        if (href === "#" || this.classList.contains("logo")) {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
+        } else {
+          const targetId = href.substring(1);
+          const targetSection = document.getElementById(targetId);
+
+          if (targetSection) {
+            targetSection.scrollIntoView({
+              behavior: "smooth",
+              block: "start"
+            });
+          }
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
+>>>>>>> 66bd0d7e553f6567ad5a1c859b651a02da2ea784
