@@ -25,6 +25,3 @@ npm-debug.log*
 dist/
 build/
 .cache/
-
-# Optional: keep server.js but don't commit sensitive config
-# server.js
